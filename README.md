@@ -1,2 +1,3 @@
 # tareadou1
-//no
+//Joaquin Hernandez Espinoza
+//Hugo Flores Velazquez
