@@ -1,3 +1,3 @@
 # tareadou1
-//Joaquin Hernandez Espinoza
-//Hugo Flores Velazquez
+//Joaquin Rodrigo Hernandez Espinoza
+//Hugo Osvaldo Flores Velasquez
