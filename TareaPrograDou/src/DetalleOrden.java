@@ -1,7 +1,12 @@
 public class DetalleOrden {
     private int cantidad;
+    private Articulo cosa;
+    public DetalleOrden(int cantidad, Articulo cosa) {
+    	this.cantidad = cantidad;
+    	this.cosa = cosa;
+    }
     public float calcPrecioSinIVA() {
-        return Articulo.getPrecio()*cantidad;
+        return cosa.getPrecio()*cantidad;
     }
 
     public float calcIVA() {
@@ -12,7 +17,7 @@ public class DetalleOrden {
         return calcPrecioSinIVA() - calcIVA();
     }
     public float calcPeso(){
-        return Articulo.getPeso()*cantidad;
+        return cosa.getPeso()*cantidad;
     }
     public String toString(){
         return "Cantidad: " + cantidad + "Peso Total: " + calcPeso() + "Precio Total sin IVA: " + calcPrecioSinIVA() + "IVA: " + calcIVA() + "Precio Total con IVA" + calcPrecio() + ".";

@@ -10,11 +10,11 @@ public class Articulo {
         this.descripcion = descripcion;
     }
 
-    public static float getPeso() {
+    public float getPeso() {
         return peso;
     }
 
-    public static float getPrecio() {
+    public float getPrecio() {
         return precio;
     }
 

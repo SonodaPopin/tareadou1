@@ -2,7 +2,9 @@
 public class Main {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		float uno = 1;
+		float dos = 2;
+		Articulo pera = new Articulo("Pera", "Sabrosa", uno, dos);
 
 	}
 
