@@ -3,7 +3,7 @@ import java.util.ArrayList;
  
 public class OrdenCompra{
     private Date fecha;
-    private String estado;
+    private String estado = "Procesando";
     private ArrayList<DetalleOrden> ordenes;
     public OrdenCompra(Date fecha, String estado){
     	this.fecha = fecha;
@@ -30,7 +30,7 @@ public class OrdenCompra{
     }
 
     public float calcPrecio() {
-        return calcPrecioSinIVA() - calcIVA();
+        return calcPrecioSinIVA() + calcIVA();
     }
     public float calcPeso(){
     	float peso = 0;
@@ -39,6 +39,10 @@ public class OrdenCompra{
     	}
         return peso;
     }
+    public Date getFecha() {
+        return fecha;
+    }
+
     public String toString(){
         return "Fecha: " + fecha + "Estado: " + estado + "Peso Total: " + calcPeso() + "Precio Total sin IVA: " + calcPrecioSinIVA() + "IVA: " + calcIVA() + "Precio Total con IVA" + calcPrecio() + ".";
     }
