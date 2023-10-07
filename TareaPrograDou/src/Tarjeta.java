@@ -4,7 +4,8 @@ public class Tarjeta extends Pago{
     public Tarjeta(OrdenCompra orden, String tipo, String numTransaccion) {
     	super(orden);
     	this.tipo = tipo;
-    	this.numTransaccion = numTransaccion;   	
+    	this.numTransaccion = numTransaccion;  
+    	orden.setEstado();
     }
 
     @Override

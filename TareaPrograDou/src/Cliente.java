@@ -10,6 +10,9 @@ public class Cliente {
     public String getRut() {
         return rut;
     }
+    public Direccion getDireccion() {
+        return direccion;
+    }
     public String toString(){
         return nombre + "RUT: " + rut + ".";
     }

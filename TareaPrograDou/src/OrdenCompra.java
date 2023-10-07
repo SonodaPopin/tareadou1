@@ -3,11 +3,10 @@ import java.util.ArrayList;
  
 public class OrdenCompra{
     private Date fecha;
-    private String estado = "Procesando";
+    private String estado = "Denagado";
     private ArrayList<DetalleOrden> ordenes;
-    public OrdenCompra(Date fecha, String estado){
+    public OrdenCompra(Date fecha){
     	this.fecha = fecha;
-    	this.estado = estado;
         ordenes = new ArrayList<>();
     }
     public void addOrden(DetalleOrden orden){
@@ -41,6 +40,9 @@ public class OrdenCompra{
     }
     public Date getFecha() {
         return fecha;
+    }
+    public void setEstado() {
+    	estado = "Aprobado";
     }
 
     public String toString(){

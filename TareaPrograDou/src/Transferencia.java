@@ -4,7 +4,8 @@ public class Transferencia extends Pago{
     public Transferencia(OrdenCompra orden, String banco, String numCuenta) {
     	super(orden);
     	this.banco = banco;
-    	this.numCuenta = numCuenta;   	
+    	this.numCuenta = numCuenta;
+    	orden.setEstado();
     }
 
     @Override

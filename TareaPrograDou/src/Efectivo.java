@@ -4,6 +4,7 @@ public class Efectivo extends Pago{
 		super(orden);
 		if (pag >= orden.calcPrecio()) {
 			vuelto = pag-orden.calcPrecio();
+	    	orden.setEstado();
 		}
 		else {
 			vuelto = -1;

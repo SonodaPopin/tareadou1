@@ -5,16 +5,15 @@ public class DocTributario {
     private Date fecha;
     private Direccion direccion;
     private OrdenCompra orden;
-    public DocTributario(String numero, String rut, Date fecha, Direccion direccion, OrdenCompra orden){
+    public DocTributario(String numero, Cliente cliente, OrdenCompra orden){
         this.numero = numero;
-        this.rut = rut;
-        this.fecha = fecha;
-        this.direccion = direccion;
+        rut = cliente.getRut();
+        fecha = orden.getFecha();
+        direccion = cliente.getDireccion();
         this.orden = orden;
     }
     public String toString() {
         return "n°" + numero + " Rut: " + rut + " Fecha: " + fecha + "Direccion: " + direccion + "Orden: " + orden + ".";
     }
-
 }
 
