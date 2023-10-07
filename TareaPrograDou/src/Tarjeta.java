@@ -6,4 +6,9 @@ public class Tarjeta extends Pago{
     	this.tipo = tipo;
     	this.numTransaccion = numTransaccion;   	
     }
+
+    @Override
+    public String toString() {
+        return "Tarjeta " + "Tipo: " + tipo + "n° de Transaccion: " + numTransaccion + super.toString() + ".";
+    }
 }

@@ -7,6 +7,9 @@ public class Cliente {
         this.rut = rut;
         this.direccion = direccion;
     }
+    public String getRut() {
+        return rut;
+    }
     public String toString(){
         return nombre + "RUT: " + rut + ".";
     }

@@ -7,4 +7,7 @@ public abstract class Pago {
 		monto = orden.calcPrecio();
 		fecha = orden.getFecha();
 	}
+	public String toString(){
+		return "Monto :" + monto + "Fecha: " + fecha + ".";
+	}
 }

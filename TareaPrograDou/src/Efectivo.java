@@ -12,5 +12,10 @@ public class Efectivo extends Pago{
     public float calcDevolucion(){
     		return vuelto;
     }
+
+	@Override
+	public String toString() {
+		return "Efectivo " + "Vuelto: " + calcDevolucion() + super.toString() + ".";
+	}
 }
 

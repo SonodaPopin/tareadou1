@@ -4,6 +4,6 @@ public class Factura extends DocTributario{
         super(numero, rut, fecha, direccion, orden);
     }
     public String toString(){
-        return "Factura: " + super.toString() + ".";
+        return "Factura " + super.toString() + ".";
     }
 }
