@@ -8,6 +8,6 @@ public abstract class Pago {
 		fecha = orden.getFecha();
 	}
 	public String toString(){
-		return "Monto :" + monto + "Fecha: " + fecha + ".";
+		return "Monto :" + monto + " Fecha: " + fecha + ".";
 	}
 }

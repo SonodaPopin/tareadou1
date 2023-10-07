@@ -14,6 +14,6 @@ public class Cliente {
         return direccion;
     }
     public String toString(){
-        return nombre + "RUT: " + rut + ".";
+        return nombre + " RUT: " + rut + " Direccion: " + direccion + ".";
     }
 }

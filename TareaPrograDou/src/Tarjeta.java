@@ -10,6 +10,6 @@ public class Tarjeta extends Pago{
 
     @Override
     public String toString() {
-        return "Tarjeta " + "Tipo: " + tipo + "n° de Transaccion: " + numTransaccion + super.toString() + ".";
+        return "Tarjeta " + " Tipo: " + tipo + " n° de Transaccion: " + numTransaccion + super.toString() + ".";
     }
 }

@@ -46,6 +46,6 @@ public class OrdenCompra{
     }
 
     public String toString(){
-        return "Fecha: " + fecha + "Estado: " + estado + "Peso Total: " + calcPeso() + "Precio Total sin IVA: " + calcPrecioSinIVA() + "IVA: " + calcIVA() + "Precio Total con IVA" + calcPrecio() + ".";
+        return "Fecha: " + fecha + " Estado: " + estado + " Peso Total: " + calcPeso() + " Precio Total sin IVA: " + calcPrecioSinIVA() + " IVA: " + calcIVA() + " Precio Total con IVA" + calcPrecio() + ".";
     }
 }

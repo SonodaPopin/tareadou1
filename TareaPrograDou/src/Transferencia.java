@@ -10,6 +10,6 @@ public class Transferencia extends Pago{
 
     @Override
     public String toString() {
-        return "Transferencia " + "Banco: " + banco + "n° de cuenta: " + numCuenta + super.toString() + ".";
+        return "Transferencia " + " Banco: " + banco + " n° de cuenta: " + numCuenta + super.toString() + ".";
     }
 }
